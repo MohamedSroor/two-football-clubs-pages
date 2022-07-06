@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta name="description" content="welcome to the homepage of LIVERPOOL's Team">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>LIVERPOOL.com</title>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>  
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }                                    
+    </script>
+ </head>
+    <body>
+     <div class="header">
+     <img class="liverpool" src="Folders/Liverpool.png" alt="Liverpool" title="Liverpool" width="100" height="90"> </div>
+     <div class="navbar">
+        <a href="index.html" class="home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Teams &#9662
+            <i class="fafa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="alahly.html">Al Ahly</a>
+            <a href="real.html">Real Madrid</a>
+            <a href="paris.html">PSG</a>
+            <a href="mcity.html">Man City</a>
+            <a href="Barcelona.html">Barcelona</a>
+            <a href="Liverpool.html">Liverpool</a>
+            <a href="milan.html">AC Milan</a>
+            <a href="Juventus.html">Juventus</a>
+          </div>
+        </div>
+      </div>
+
+     <h2 class="news" > <b>News</b> </h2>
+      <div class="container">
+
+        <div class="mySlides">
+            <img class="img1" src="Folders/jurpen klopp.jpg" style="width: 100%">
+         </div>
+      
+         <div class="mySlides">
+            <img class="img1" src="Folders/ibrahima konate.jpg" style="width:100%">
+         </div>
+      
+         <div class="mySlides">
+            <img class="img1" src="Folders/Virgil van Dijk.jpg" style="width:100%">
+         </div>
+      
+         <div class="mySlides">
+            <img class="img1" src="Folders/mohamed salah.jpg" style="width:100%">
+         </div>
+      
+         <div class="mySlides">
+            <img class="img1" src="Folders/Sadio Mane.jpg" style="width:100%">
+         </div>
+      
+         <div class="mySlides">
+            <img class="img1" src="Folders/Wijnaldum.jpg" style="width:100%">
+         </div>
+      
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+         <div class="caption-container">
+          <p id="caption"></p>
+         </div>
+      
+         <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="Folders/jurpen klopp.jpg" style="width:100%" onclick="currentSlide(1)" alt="Jurgen Klopp named Premier League Manager of the Month for May">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Folders/ibrahima konate.jpg" style="width:100%" onclick="currentSlide(2)" alt="Jurgen Klopp: Ibrahima Konate will add quality and potential to our squad">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Folders/Virgil van Dijk.jpg" style="width:100%" onclick="currentSlide(3)" alt="Virgil van Dijk and Joe Gomez continue fitness rehab">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Folders/mohamed salah.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mohamed Salah voted Standard Chartered Men's Player of the Season">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Folders/Sadio Mane.jpg" style="width:100%" onclick="currentSlide(5)" alt="Sadio Mane receive awards for Premier League milestones ">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Folders/Wijnaldum.jpg" style="width:100%" onclick="currentSlide(6)" alt="Talking points: Legendary Gini, fans return, super Sadio and more">
+          </div>
+        </div>
+     </div>
+     <br>
+     <div class="tg">
+     <div>
+     <h2 class="leaguetable">League Table</h2>
+        <table>
+            <tr class="firstcolumn">
+              <th>Pos.</th>
+              <th>P</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+            <tr>
+                <th>1. Man City</th>
+                <th>38</th>
+                <th>27</th>
+                <th>5</th>
+                <th>6</th>
+                <th>51</th>
+                <th>86</th>
+            </tr>
+            <tr class="row">
+                <th>2. Man Utd</th>
+                <th>38</th>
+                <th>21</th>
+                <th>11</th>
+                <th>6</th>
+                <th>29</th>
+                <th>74</th>
+            </tr>
+            <tr class="liver">
+                <th>3.Liverpool</th>
+                <th>38</th>
+                <th>20</th>
+                <th>9</14th>
+                <th>9</th>
+                <th>26</th>
+                <th>69</th>
+            </tr>
+            <tr class="row">
+                <th>4. Chealse</th>
+                <th>38</th>
+                <th>19</th>
+                <th>10</th>
+                <th>9</th>
+                <th>22</th>
+                <th>67</th>
+            </tr>
+        </table>
+        <button class="fulltable">Full Table &#9654</button>
+      </div>
+      <img class="gif2" src="Folders/Official Partner.gif" alt="Official Partner" width="250" height="200"> 
+      <img class="gif1" src="Folders/LFC GO.gif" alt="LFCTV"  width="250" height="202">
+     </div>
+      <div>
+         <h2 class="videos"> Videos </h2>
+         <video width="600" height="400" controls>
+           <source src="Folders/Liverpool FC.mp4" type="video/mp4">
+         </video>
+         <iframe src="https://www.youtube.com/embed/cFNHQek49hM" width="600" height="368" class="youtube"></iframe>
+      </div>
+      <div>
+         <h2 class="map">The Location Of The Anfield</h2>
+         <div class="mapouter">
+            <div class="gmap_canvas">
+               <iframe width="400" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=anfield&t=k&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://fmovies2.org"></a>
+               
+            </div>
+         </div>
+      <div>
+        <h2 class="tournaments">Tournaments</h2>
+        <button type="button" class="collapsible">Premier League &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &plus;</button>
+        <div class="content">
+        <p><b>1900-1901, 1905-1906, 1921-1922, 1922-1923, 1946-1947, 1963-1964, 1965-1966, 1972-1973, 1975-1976, 1976-1977, 1978-1979, 1979-1980, 1981-1982, 1982-1983,1983-1984, 1985-1986, 1987-1988, 1989-1990, 2019-2020</b></p>
+        </div>
+        <button type="button" class="collapsible">UEFA Champions League &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; &plus;</button>
+        <div class="content">
+        <p><b>1977, 1978, 1981, 1984, 2005, 2019</b></p>
+        </div>
+        <button type="button" class="collapsible">UEFA Super Cup &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; &plus;</button>
+        <div class="content">
+        <p><b>1977, 2001, 2005, 2019</b></p>
+        </div>
+        </div>
+        <button type="button" class="collapsible">FIFA Club World Cup &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; &plus;</b></button>
+        <div class="content">
+        <p><b>2019</b></p>
+     </div>
+        <script>
+           var coll = document.getElementsByClassName("collapsible");
+           var i;
+
+           for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                 content.style.display = "none";
+              } else {
+                 content.style.display = "block";
+              }
+           });
+           }
+        </script>            
+     </div>
+     <div class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+        <p class="copyright">&copy; 2021 <span>Offside Sport</span></p>
+     <script src="https://www.drv.tw/inc/wd.js?s=g7ztz1a1qbekfuvnmvyjvq"></script></body>
+</html>
