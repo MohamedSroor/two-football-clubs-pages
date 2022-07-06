@@ -1,1 +1,1 @@
-This is the first project i have done , I worked on Liverpool & Barcelona pages only.
+This is the first project I have done , I worked on Liverpool & Barcelona pages only.
