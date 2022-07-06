@@ -1,1 +1,1 @@
-This is the first project i have dome , I worked on Liverpool page & Barcelona page only.
+This is the first project i have done , I worked on Liverpool page & Barcelona page only.
